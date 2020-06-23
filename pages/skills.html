@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="pagestyle.css">
+    <title>Skills</title>
+</head>
+<body style="background-image: url(../img/bg.jpg);">
+    <div id="particles-js" style="height: 90em;">
+        <div class="menu">
+            <ul id="slide-out" class="sidenav black">
+                <li><a class="white-text waves-effect" href="../index.html" style="margin-top: 7em;">Home</a></li>
+                <li><a class="white-text waves-effect" href="./about.html">About me</a></li>
+                <li><a class="white-text waves-effect" href="./skills.html">Skills</a></li>
+                <li><a class="white-text waves-effect" href="./project.html">project</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="skills" >
+            <h1>TECHNICAL SKILLS</h1>
+            <div class="techskills">
+                <ul>
+                    <li>
+                        <img src="../img/html.png" alt="html"></br>
+                        <p>HTML & CSS</p>
+                    </li>                    
+                    <li>
+                        <div class="js">
+                            <img src="../img/js.png"></br>
+                        </div>
+                        <p>Javascript</p>
+                    </li>
+                    <li>
+                        <img src="../img/figma.png" alt="figma"></br>
+                        <p>Figma</p>
+                    </li>
+                </ul>
+                <ul style="margin-top: 3em;">
+                    <li>
+                        <img src="../img/react.png" alt="react"></br>
+                        <p>React</p>                          
+                    </li>
+                    <li>
+                        <img src="../img/django.png" alt="django"></br>
+                        <p>Django</p>
+                    </li>
+                    <li>
+                        <img src="../img/cpp.png" alt="cpp"></br>
+                        <p>C & C++</p>
+                    </li>
+                </ul>
+            </div>
+            <h2 style="margin-top: 3em;">SOFT SKILLS</h2>
+            <div class="softskills" >
+                <ul>
+                    <li>
+                        <img src="../img/teamwork.png" alt="teamwork"></br>
+                        <p>teamwork</p>
+                    </li>
+                    <li>
+                        <img src="../img/problem.png" alt="problem solving"></br>
+                        <p>problem solving</p>
+                    </li>
+                    <li>
+                        <img src="../img/thinking.png" alt="criticla thinking"></br>
+                        <p>critical thinking</p>
+                    </li>
+                    <li>
+                        <img src="../img/time.png" alt="time management"></br>
+                        <p>time management</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://use.fontawesome.com/65b807461c.js"></script>
+    <script src="../particles.js"></script>
+    <script>
+        particlesJS.load("particles-js", '../particles.json', function () {
+            console.log('particles.json loaded');
+        });
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+    </script>
+</body>
+</html>

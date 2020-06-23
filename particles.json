@@ -1,0 +1,27 @@
+{
+    "particles": {
+        "number": {
+            "value": 300
+        },
+        "color": {
+            "value": "#546e7a"
+        },
+        "opacity": {
+            "value": 0.3,
+            "random": true
+        },
+        "size": {
+            "value": 2
+        },
+        "line_linked": {
+            "enable": true,
+            "distance":100,
+            "opacity": 0.3,
+            "color":"#546e7a"
+        },
+        "move":{
+            "enabled":true,
+            "speed":2
+        }
+    }
+}

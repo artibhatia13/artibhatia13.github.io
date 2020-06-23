@@ -1,0 +1,298 @@
+#particles-js {
+    height: 50em;
+}
+.menu i{
+    position: absolute;
+    padding:1em 0 0 1em;
+    font-size: 35px;
+    color:#3500d3;
+}
+.sidenav li {
+    margin: 1em;
+    text-transform: uppercase;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    letter-spacing: 3px;
+}
+h1,h2 {
+    background: -webkit-linear-gradient(#1201f7, hsl(216, 100%, 62%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+    text-align: center;
+    font-size: 50px;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 4px;
+}
+p,li{
+    color: white;
+}
+
+/*---------------------------------------------------------about---------------------------------------------------------------- */
+
+.about h2{
+    margin-top: 1em;
+}
+.about ul p{
+    font-weight: 200;
+    font-size: 12px;
+    text-transform: none;
+}
+.about ul{
+    display:inline-flex;
+    margin-top: 3em;
+}
+.desktop{
+    display: inline-flex;
+}
+.mobile{
+    display: none;
+}
+.about li{
+    text-align: center;
+    background-color: black;
+    box-shadow: 0 0 8px 2px #1201f7;
+    margin-top: -15px;
+    font-size: 13px;
+    width:18em;
+    border-radius: 15px;
+    margin: 1em 3em 0 0;
+    padding: 2em 0em 2em 0em;
+}
+.about {
+    text-transform: capitalize;
+    position: absolute;
+    left:17em;
+    top:4em;
+    width:51em;
+}
+.text{
+    font-size: 13px;
+    font-weight: 200;
+    text-transform: none;
+    text-align: center;
+    margin-top: 4em;
+    margin-left: auto;
+    margin-right: auto;
+    line-height: 20px;
+}
+
+/*---------------------------------------------------------skills---------------------------------------------------------------- */
+
+.skills{
+    position: absolute;
+    left:16em;
+    top:3em;
+    width: 52.5em;   
+    padding-bottom: 4em;
+} 
+.techskills{
+    margin-top: 6em;
+}
+.techskills ul{
+    display: inline-flex;
+}
+.techskills li{
+    margin-right:5em;
+    background-color: black;
+    height:14em;
+    width:14em;
+    border-radius: 50%;
+    box-shadow:0px 0px 10px 4px #2a1ed8;
+    text-align:center;
+}
+.techskills p{
+    padding-top:10px;
+    font-size: 15px;
+}
+
+.softskills ul {
+    display: inline-flex;
+    margin-top: 5em;
+}
+.softskills li{
+    margin-right: 4em;
+    background-color: black;
+    padding-top:4em;
+    height:15em;
+    width:15em;
+    border-radius: 50%;
+    box-shadow:0px 0px 10px 4px #2a1ed8;
+    text-align:center;
+    font-size: 11px;
+}
+.techskills img{
+    margin-top: 3.5em;
+    height:5em;
+    width:auto;
+}
+.js img{
+    height: 4em;
+    margin-top: 4.5em;
+}
+.softskills img{
+    margin-top: 0;
+    height: 5em;
+    width:auto;
+}
+.softskills p{
+    margin-top: 2em;
+}
+
+/*---------------------------------------------------------project---------------------------------------------------------------- */
+
+.project{
+    position: absolute;
+    left:20em;
+    top:3em;
+    width:40em;
+}
+.projectlist h5{
+    font-size:20px ;
+    margin-top: 15px;
+}
+.projectlist i{
+    font-size: 30px;
+    color:white;
+    margin: auto;
+    padding:20px;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 15px;
+}
+.projectlist li {
+    margin-top:3em;
+    display: inline-flex;
+}
+.projectlist p{
+    font-size: 12px;
+    font-weight: 200;
+}
+.projectLine{
+    height:7em;
+    width:1px;
+    background-color: grey;
+    margin-right: 15px;
+    margin-top: 8px;
+}
+.collab{
+    height:6em;
+    width:1px;
+}
+
+/*---------------------------------------------------------mobile---------------------------------------------------------------- */
+
+@media screen and (max-width: 768px) {
+    .menu i {
+        font-size: 25px;
+        margin-top: 0;
+    }
+    h1,h2{
+        font-size: 30px;
+        letter-spacing: 2px;
+    }
+    .sidenav {
+        width: 20em;
+    }
+    /*-------------------------------------------about----------------------------------*/
+    .about{
+        left:3em;
+        top:5em;
+        width:20em;
+    }
+    .text{
+        font-size: 12px;
+        margin-top: 1em;
+    }  
+    .about h2{
+        margin-top: 1.5em;
+    }  
+    .desktop{
+        display: none;
+    }
+    .mobile{
+        display: inline-block;
+    }
+    .about ul{
+        margin-top: 1em;
+        display: inline-block;
+        margin-left: 1em;
+    }
+    .about li{
+        padding-bottom: 1em;
+        width:20em;
+    }
+
+    /*-------------------------------------------skills----------------------------------*/
+
+    .skills{
+        left:3.5em;
+        top:5em;
+        width:20em;
+    }
+    .techskills{
+        margin:3em 0 0 0;
+    }
+    .techskills li{
+        height:5em;
+        width:5em;
+        margin-right: 2.5em;
+    }
+    .techskills img{
+        height:1.5em;
+        width: auto;
+        margin-top: 1.5em;
+        margin-bottom: -4px;
+    }
+    .js img {
+        height: 1.2em;
+        margin: 1.5em 0 -2px 0;
+    }
+    .techskills p{
+        font-size: 7px;
+        padding-top: 0;
+    }
+    .softskills{
+        margin-left: -1em;
+    }
+    .softskills li{
+        height:5.5em;
+        width:5.5em;
+        margin-right: 2em;
+        padding-top: 0;
+        margin-top: -4em;
+    }
+    .softskills img{
+        height:1.5em;
+        width: auto;
+        margin-top: 1.5em;
+        margin-bottom: -4px;
+    }
+    .softskills p{
+        font-size: 5px;
+        padding-top: 0;
+    }
+
+    /*-------------------------------------------skills----------------------------------*/
+
+    .project{
+        width:21em;
+        left:2em;
+        top:4em;
+    }
+    .projectlist li{
+    }
+    .projectlist i{
+        font-size: 17px;
+        padding:13px;
+    }
+    .projectlist h5{
+        font-size: 15px;
+    }
+    .projectlist p{
+        font-size: 8px;
+    }
+    .projectLine{
+        height: 6em;
+    }
+}

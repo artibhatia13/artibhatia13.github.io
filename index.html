@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Iceland' rel='stylesheet'>
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio</title>
+</head>
+<body>
+    <div id="particles-js">
+        <div class="menu" style="position: absolute;">
+            <ul id="slide-out" class="sidenav black">
+                <li><a class="white-text waves-effect" href="./index.html" style="margin-top: 7em;">Home</a></li>
+                <li><a class="white-text waves-effect" href="./pages/about.html">About me</a></li>
+                <li><a class="white-text waves-effect" href="./pages/skills.html">Skills</a></li>
+                <li><a class="white-text waves-effect" href="./pages/project.html">projects</a></li>
+            </ul>
+            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <h1>ARTI BHATIA</h1>
+            <p>Front-end Web Developer</p>
+        </div>
+        <div class="iconline"></div>
+        <div class="Icons">
+            <a href="https://github.com/artibhatia13/" target="_balnk"><i class="fa fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/arti-bhatia/" target="_balnk"><i class="fa fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/artibhatia13/" target="_balnk"><i class="fa fa-instagram"></i></a>
+            <a href="https://twitter.com/_Arti_Bhatia/" target="_blank"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+
+
+    <script src="https://use.fontawesome.com/65b807461c.js"></script>
+    <script src="./particles.js"></script>
+    <script>
+        particlesJS.load("particles-js", 'particles.json', function () {
+            console.log('particles.json loaded');
+        });
+    </script>
+    <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+                $('.sidenav').sidenav();
+            });
+    </script>
+</body>
+</html>
