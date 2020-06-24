@@ -255,7 +255,7 @@ li {
 
     h1,
     h2 {
-        font-size: 35px;
+        font-size: 30px;
         letter-spacing: 2px;
     }
 
@@ -302,15 +302,17 @@ li {
 
     .skills {
         left: 1.5em;
-        top: 5em;
+        top: 7em;
         width: 20em;
+    }
+    .skills h1, h2{
+        font-size: 25px;
     }
 
     .techskills {
         margin-top: 3em;
         margin-left: -2em;
     }
-
     .techskills li {
         height: 5em;
         width: 5em;
@@ -343,7 +345,7 @@ li {
         width: 5.5em;
         margin-right: 2.3em;
         padding-top: 0;
-        margin-top: -4em;
+        margin-top: -2em;
     }
 
     .softskills img {
