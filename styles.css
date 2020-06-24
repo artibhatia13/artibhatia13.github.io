@@ -7,48 +7,74 @@ body{
     color:white;
 }
 #particles-js{
-    height: 37em;
+    height: 35em;
 }
-.menu i{
-    padding:1em 0 0 1em;
+#open{
+    position: absolute;
+    left:1em;
+    top:1em;
     font-size: 35px;
-    color: #3500d3;
+    color: #1201f7;
 }
-.sidenav li{
-    margin:1em;
+span i:hover {
+    cursor: pointer;
+}
+.menu{
+    background-color: black;
+    height:100%;
+    width: 0;
+    overflow-x: hidden;
+    z-index: 1;
+    transition: 0.5s;
+}
+.menu a{
+    display: block;
+    margin:2em 0 0 4em;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     letter-spacing: 2px;
+    text-decoration: none;
+    color: rgb(167, 166, 166);
+}
+.closebtn{
+    position: absolute;
+    left:10em;
+}
+.menu a:hover{
+    color: white;
 }
 .container{
     position: absolute;
-    left:27em;
-    top:12em;
+    left:26em;
+    top:15em;
     width:40em;
 }
 .container h1{
+    display: inline;
     font-family: 'Iceland';
     font-size: 55px;
-    letter-spacing: 8px;
+    letter-spacing: 9px;
+    animation: text 1s 1;
 }
 .container p{
     margin-top: 1em;
     font-size: 20px;
     letter-spacing: 3px;
+    animation: text 2s 1;
 }
 .line{
     position: absolute;
-    left:25em;
+    left:24em;
     top:14.5em;
-    height:9em;
+    height:8em;
     width:4px;
     background-color:#3500D3;
 }
 .Icons {
     position: absolute;
-    left: 76em;
-    top: 19em;
+    left: 71em;
+    top: 17em;
 }
 .Icons a{
     display: list-item;
@@ -70,23 +96,23 @@ body{
 }
 .iconline{
     position: absolute;
-    left: 78em;
-    top: 21em;
+    left: 73em;
+    top: 19em;
     height: 13em;
     width: 2px;
     background-color: #2b00ad;
 }
 
 @media screen and (max-width: 768px){
-    .menu i{
-        font-size: 30px;
+    #particles-js {
+        height: 45em;
     }
-    .sidenav{
-        width:20em;
+    .menu i{
+        font-size: 25px;
     }
     .container{
         position: absolute;
-        top:17em;
+        top:18em;
         left:4em;
         width:100%;
         height: 100%;
@@ -103,11 +129,11 @@ body{
         height:4px;
         width:5em;
         left:4em;
-        top:17em;
+        top:15.5em;
     }
     .Icons{
-        top:38em;
-        left:3em;
+        top:35em;
+        left:2.5em;
     }
     .Icons a{
         display: inline-block;
@@ -117,8 +143,14 @@ body{
     }
     .iconline{
         height:2px;
-        width:15em;
-        top:40em;
+        width:13em;
+        top:37.2em;
         left:6em;
+    }
+}
+
+@keyframes text{
+    0%{
+        letter-spacing: -10px;
     }
 }

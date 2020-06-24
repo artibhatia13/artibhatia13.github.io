@@ -4,21 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="pagestyle.css">
     <title>About Me</title>
 </head>
 <body style="background-image: url(../img/bg.jpg);">
-    <div id="particles-js">
-        <div class="menu" style="position: absolute;">
-            <ul id="slide-out" class="sidenav black">
-                <li><a class="white-text waves-effect" href="../index.html" style="margin-top: 7em;">Home</a></li>
-                <li><a class="white-text waves-effect" href="./about.html">About me</a></li>
-                <li><a class="white-text waves-effect" href="./skills.html">Skills</a></li>
-                <li><a class="white-text waves-effect" href="./project.html">project</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars"></i></a>
+    <div id="particles-js" style="height: 60em;">
+        <div class="menu" id="sidenav" style="position: absolute;">
+            <a onclick="closenav()" class="closebtn"><i class="fa fa-times"></i></a>
+            <a href="../index.html" style="margin-top: 8em;">Home</a>
+            <a href="./about.html">About me</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./project.html">projects</a>
         </div>
+        <span onclick="opennav()" id="open"><i class="fa fa-bars"></i></span>
         <div class="about">
             <h1 >about me</h1>
                 <p class="text">I am an exuberant programmer and loves to develop websites for personal and professional
@@ -33,10 +31,10 @@
                     <li>Computer science engineering </br>2023 </br>
                         <p>Model Engineering college, Kerala</br>8.94 in sem-1</p>
                     </li></br>
-                    <li>12th Grade </br>2019</br>
+                    <li>12th Standard </br>2019</br>
                         <p>KV INS Dronacharya, Kerala</br> 95.2%</p>
                     </li></br>
-                    <li>10th Grade </br>2017</br>
+                    <li>10th Standard </br>2017</br>
                         <p>KV Porbandar, Gujrat</br> 10 CGPA</p>
                     </li></br>
                 </div>                
@@ -44,10 +42,10 @@
                     <li>Computer science engineering </br>2023 </br>
                         <p>Model Engineering college, Kerala</br>8.94 in sem-1</p>
                     </li></br>
-                    <li>12th Grade - 2019</br>
+                    <li>12th Standard - 2019</br>
                         <p>KV INS Dronacharya, Kerala</br> 95.2%</p>
                     </li></br>
-                    <li>10th Grade - 2017</br>
+                    <li>10th Standard - 2017</br>
                         <p>KV Porbandar, Gujrat</br> 10 CGPA</p>
                     </li></br>
                 </div>
@@ -68,6 +66,16 @@
         $(document).ready(function () {
                 $('.sidenav').sidenav();
             });
+
+        function opennav(){
+            document.getElementById("sidenav").style.width = "18em";
+            document.getElementById("open").style.display = "none";            
+        }
+
+        function closenav(){
+            document.getElementById("sidenav").style.width = "0em";
+            document.getElementById("open").style.display = "inline";
+        }
     </script>
 </body>
 </html>

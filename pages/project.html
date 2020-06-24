@@ -5,22 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="pagestyle.css">
     <title>Skills</title>
 </head>
 
 <body style="background-image: url(../img/bg.jpg);">
-    <div id="particles-js" style="height: 55em;">
-        <div class="menu" style="position: absolute;">
-            <ul id="slide-out" class="sidenav black">
-                <li><a class="white-text waves-effect" href="../index.html" style="margin-top: 7em;">Home</a></li>
-                <li><a class="white-text waves-effect" href="./about.html">About me</a></li>
-                <li><a class="white-text waves-effect" href="./skills.html">Skills</a></li>
-                <li><a class="white-text waves-effect" href="./project.html">project</a></li>
-            </ul>
-            <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="fa fa-bars" ></i></a>
+    <div id="particles-js" style="height: 65em;">
+        <div class="menu" id="sidenav" style="position: absolute;">
+            <a onclick="closenav()" class="closebtn"><i class="fa fa-times"></i></a>
+            <a href="../index.html" style="margin-top: 8em;">Home</a>
+            <a href="./about.html">About me</a>
+            <a href="./skills.html">Skills</a>
+            <a href="./project.html">projects</a>
         </div>
+        <span onclick="opennav()" id="open"><i class="fa fa-bars"></i></span>
         <div class="project" >
             <h1>PROJECT</h1>
             <div class="projectlist">
@@ -31,15 +29,14 @@
                         <div class="heading">
                             <h5>IEDC MEC WEBSITE</h5>
                             <p>I'm core member of IEDC Tech team. We developed a fully responsive and interactive website
-                                for IEDC-MEC (Innovation and Entrepreneurship Development Cell), it aims to provide
-                                students an opportunity to experiment and innovate. 
+                                for IEDC-MEC (Innovation and Entrepreneurship Development Cell). 
                             </p>
                         </div>
                     </li></br>
                     <li>
                         <i class="fa fa-code" style="background-color:#00897b;"></i>
-                        <div class="projectLine" id="collab"></div>
-                        <div class="heading" style="margin-top: 10px;">
+                        <div class="projectLine"></div>
+                        <div class="heading">
                             <h5>CODE MARKET WEBSITE</h5>
                             <p >In process of building a collaboration platform for
                                 clients to collabaorate on projects.</p>
@@ -50,8 +47,8 @@
                         <div class="projectLine"></div>
                         <div class="heading">
                             <h5>MECBOOKSWATCH</h5>
-                            <p style="margin-bottom: 0em;">A website for MEC students to buy and sell old textbooks or
-                                study material to juniors and buy new from seniors
+                            <p>A website for MEC students to sell old textbooks or
+                                study material to juniors and buy new from seniors.
                             </p>                            
                         </div>
                     </li></br>
@@ -60,10 +57,16 @@
                         <div class="projectLine"></div>
                         <div class="heading">
                             <h5>ATTENDANCE TRACKER</h5>
-                            <p>calling out roll numbers is an inefficient way of marking attendance in colleges where the
-                                students have mastered the art of marking proxies for their friends. Attendance
-                                Tracker marks the attendence of students automatically using facial detection. 
-                            </p>                            
+                            <p>Attendance Tracker marks the attendence of students automatically using facial detection.</p>                            
+                        </div>
+                    </li></br>
+                    <li>
+                        <i class="fa fa-comments" style="background-color: #cddc39 ;"></i>
+                        <div class="projectLine"></div>
+                        <div class="heading">
+                            <h5>JUSTALKZ</h5>
+                            <p >Chat Application me and my team developed during our first hackathon - Hack Kochi#2 organized by IEEE and WIE 
+                            </p>
                         </div>
                     </li>
                 </ul>
@@ -84,6 +87,16 @@
         $(document).ready(function () {
             $('.sidenav').sidenav();
         });
+
+        function opennav(){
+            document.getElementById("sidenav").style.width = "18em";
+            document.getElementById("open").style.display = "none";
+        }
+
+        function closenav(){
+            document.getElementById("sidenav").style.width = "0em";
+            document.getElementById("open").style.display = "inline";
+        }
     </script>
 </body>
 
