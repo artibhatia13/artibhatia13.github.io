@@ -1,27 +1,31 @@
 #particles-js {
     height: 50em;
 }
-#open{
+
+#open {
     position: absolute;
-    left:1em;
-    top:1em;
+    left: 1em;
+    top: 1em;
     font-size: 35px;
     color: #1201f7;
 }
-span i:hover{
+
+span i:hover {
     cursor: pointer;
 }
-.menu{
+
+.menu {
     background-color: black;
-    height:inherit;
+    height: inherit;
     width: 0;
     overflow-x: hidden;
     transition: 0.5s;
     z-index: 1;
 }
-.menu a{
+
+.menu a {
     display: block;
-    margin:2em 0 0 4em;
+    margin: 2em 0 0 4em;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -29,17 +33,22 @@ span i:hover{
     text-decoration: none;
     color: rgb(167, 166, 166);
 }
-.closebtn{
+
+.closebtn {
     position: absolute;
-    left:10em;
+    left: 10em;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: white;
 }
+
 span i:hover {
     cursor: pointer;
 }
-h1,h2 {
+
+h1,
+h2 {
     background: -webkit-linear-gradient(#1201f7, hsl(216, 100%, 62%));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -50,7 +59,9 @@ h1,h2 {
     letter-spacing: 6px;
     animation: text 1.5s 1;
 }
-p,li{
+
+p,
+li {
     color: white;
 }
 
@@ -59,41 +70,48 @@ p,li{
 .about {
     text-transform: capitalize;
     position: absolute;
-    left:13em;
-    top:4em;
-    width:52em;
+    left: 13em;
+    top: 4em;
+    width: 52em;
 }
-.about h2{
+
+.about h2 {
     margin-top: 1.5em;
 }
-.about ul{
-    display:inline-flex;
+
+.about ul {
+    display: inline-flex;
     margin-top: 1em;
 }
-.about ul p{
+
+.about ul p {
     font-weight: 200;
     font-size: 12px;
     text-transform: none;
 }
-.desktop{
+
+.desktop {
     display: inline-flex;
 }
-.mobile{
+
+.mobile {
     display: none;
 }
-.about li{
+
+.about li {
     list-style-type: none;
     text-align: center;
     background-color: black;
     box-shadow: 0 0 8px 2px #1201f7;
     margin-top: -15px;
     font-size: 13px;
-    width:18em;
+    width: 18em;
     border-radius: 15px;
     margin: 1em 3em 0 0;
     padding: 2em 0em 2em 0em;
 }
-.text{
+
+.text {
     font-size: 13px;
     font-weight: 200;
     text-transform: none;
@@ -106,31 +124,35 @@ p,li{
 
 /*---------------------------------------------------------skills---------------------------------------------------------------- */
 
-.skills{
+.skills {
     position: absolute;
-    left:11em;
-    top:3em;
-    width: 57em;   
+    left: 11em;
+    top: 3em;
+    width: 57em;
     padding-bottom: 4em;
-} 
-.techskills{
+}
+
+.techskills {
     margin-top: 6em;
 }
-.techskills ul{
+
+.techskills ul {
     display: inline-flex;
 }
-.techskills li{
+
+.techskills li {
     list-style-type: none;
-    margin-right:5em;
+    margin-right: 5em;
     background-color: black;
-    height:14em;
-    width:14em;
+    height: 14em;
+    width: 14em;
     border-radius: 50%;
-    box-shadow:0px 0px 10px 4px #2a1ed8;
-    text-align:center;
+    box-shadow: 0px 0px 10px 4px #2a1ed8;
+    text-align: center;
 }
-.techskills p{
-    padding-top:10px;
+
+.techskills p {
+    padding-top: 10px;
     font-size: 15px;
 }
 
@@ -138,76 +160,87 @@ p,li{
     display: inline-flex;
     margin-top: 3em;
 }
-.softskills li{
+
+.softskills li {
     list-style-type: none;
     margin-right: 4em;
     background-color: black;
-    height:15em;
-    width:15em;
+    height: 15em;
+    width: 15em;
     border-radius: 50%;
-    box-shadow:0px 0px 10px 4px #2a1ed8;
-    text-align:center;
+    box-shadow: 0px 0px 10px 4px #2a1ed8;
+    text-align: center;
     font-size: 11px;
 }
-.techskills img{
+
+.techskills img {
     margin-top: 3.5em;
-    height:5em;
-    width:auto;
+    height: 5em;
+    width: auto;
 }
-.js img{
+
+.js img {
     height: 4em;
     margin-top: 4.5em;
 }
-.softskills img{
+
+.softskills img {
     margin-top: 3em;
     height: 5em;
-    width:auto;
+    width: auto;
 }
-.softskills p{
+
+.softskills p {
     margin-top: 2em;
 }
 
 /*---------------------------------------------------------project---------------------------------------------------------------- */
 
-.project{
+.project {
     position: absolute;
-    left:16em;
-    top:3em;
-    width:40em;
+    left: 16em;
+    top: 3em;
+    width: 40em;
 }
-.projectlist h5{
-    font-size:22px ;
+
+.projectlist h5 {
+    font-size: 22px;
     margin-top: 15px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-weight: 500;
 }
-.projectlist i{
+
+.projectlist i {
     font-size: 30px;
-    color:white;
+    color: white;
     margin: auto;
-    padding:20px;
+    padding: 20px;
     border-radius: 50%;
     text-align: center;
     margin-right: 15px;
 }
+
 .projectlist li {
-    margin-top:3em;
+    margin-top: 3em;
     display: inline-flex;
 }
-.heading{
+
+.heading {
     margin-top: auto;
     margin-bottom: auto;
 }
-.projectlist p{
+
+.projectlist p {
     font-size: 13px;
     font-weight: 200;
     line-height: 20px;
     margin-top: -2em;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
-.projectLine{
-    height:7em;
-    width:1px;
+
+.projectLine {
+    height: 7em;
+    width: 1px;
     background-color: grey;
     margin-right: 15px;
     margin-top: 8px;
@@ -215,124 +248,149 @@ p,li{
 
 /*---------------------------------------------------------mobile---------------------------------------------------------------- */
 
-@media screen and (max-width: 768px) {    
-    #open{
+@media screen and (max-width: 768px) {
+    #open {
         font-size: 28px;
     }
-    h1,h2{
+
+    h1,
+    h2 {
         font-size: 35px;
         letter-spacing: 2px;
     }
+
     /*-------------------------------------------about----------------------------------*/
-    .about{
-        left:3em;
-        top:5em;
-        width:17em;
+    .about {
+        left: 3em;
+        top: 5em;
+        width: 17em;
     }
-    .text{
+
+    .text {
         font-size: 12px;
         margin-top: 1em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    }  
-    .about h2{
+    }
+
+    .about h2 {
         margin-top: 1.5em;
-    }  
-    .desktop{
+    }
+
+    .desktop {
         display: none;
     }
-    .mobile{
+
+    .mobile {
         display: inline-block;
     }
-    .mobile p{
+
+    .mobile p {
         line-height: 2em;
     }
-    .about ul{        
+
+    .about ul {
         display: inline-block;
         margin-left: -2em;
     }
-    .about li{
+
+    .about li {
         padding-bottom: 1em;
-        width:20em;
+        width: 20em;
     }
 
     /*-------------------------------------------skills----------------------------------*/
 
-    .skills{
-        left:1.5em;
-        top:5em;
-        width:20em;
+    .skills {
+        left: 1.5em;
+        top: 5em;
+        width: 20em;
     }
-    .techskills{
-        margin-top:3em;
+
+    .techskills {
+        margin-top: 3em;
         margin-left: -2em;
     }
-    .techskills li{
-        height:5em;
-        width:5em;
+
+    .techskills li {
+        height: 5em;
+        width: 5em;
         margin-right: 2em;
     }
-    .techskills img{
-        height:1.5em;
+
+    .techskills img {
+        height: 1.5em;
         width: auto;
         margin-top: 1.5em;
         margin-bottom: -4px;
     }
+
     .js img {
         height: 1.2em;
         margin: 1.5em 0 -2px 0;
     }
-    .techskills p{
+
+    .techskills p {
         font-size: 6px;
         padding-top: 0;
     }
-    .softskills{
-        margin-left: -2.7em;
+
+    .softskills {
+        margin-left: -2em;
     }
-    .softskills li{
-        height:5.5em;
-        width:5.5em;
-        margin-right: 2em;
+
+    .softskills li {
+        height: 5.5em;
+        width: 5.5em;
+        margin-right: 2.3em;
         padding-top: 0;
         margin-top: -4em;
     }
-    .softskills img{
-        height:1.5em;
+
+    .softskills img {
+        height: 1.5em;
         width: auto;
         margin-top: 1.2em;
         margin-bottom: -4px;
     }
-    .softskills p{
-        font-size: 4px;
+
+    .softskills p {
+        font-size: 5px;
+        font-weight: 600;
         padding-top: 0;
     }
 
     /*-------------------------------------------project----------------------------------*/
 
-    .project{
-        width:19em;
-        left:2em;
-        top:4em;
+    .project {
+        width: 19em;
+        left: 2em;
+        top: 4em;
     }
-    .projectlist{
+
+    .projectlist {
         margin-left: -2.5em;
     }
-    .projectlist i{
+
+    .projectlist i {
         font-size: 17px;
-        padding:13px;
+        padding: 13px;
     }
-    .projectlist h5{
+
+    .projectlist h5 {
         font-size: 15px;
     }
-    .projectlist p{
+
+    .projectlist p {
         font-size: 8px;
     }
-    .projectLine{
+
+    .projectLine {
         height: 6em;
     }
 }
 
-@keyframes text{
-    0%{
+@keyframes text {
+    0% {
         letter-spacing: -20px;
     }
 }
