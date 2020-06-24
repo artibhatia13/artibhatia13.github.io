@@ -1,35 +1,41 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     background-image: url(./img/bg.jpg);
-    color:white;
+    color: white;
 }
-#particles-js{
+
+#particles-js {
     height: 35em;
 }
-#open{
+
+#open {
     position: absolute;
-    left:1em;
-    top:1em;
+    left: 1em;
+    top: 1em;
     font-size: 35px;
-    color: #1201f7;
+    color: #3500D3;
 }
+
 span i:hover {
     cursor: pointer;
 }
-.menu{
+
+.menu {
     background-color: black;
-    height:100%;
+    height: 100%;
     width: 0;
     overflow-x: hidden;
     z-index: 1;
     transition: 0.5s;
 }
-.menu a{
+
+.menu a {
     display: block;
-    margin:2em 0 0 4em;
+    margin: 2em 0 0 4em;
     text-transform: uppercase;
     font-size: 18px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -37,49 +43,57 @@ span i:hover {
     text-decoration: none;
     color: rgb(167, 166, 166);
 }
-.closebtn{
+
+.closebtn {
     position: absolute;
-    left:10em;
+    left: 10em;
 }
-.menu a:hover{
+
+.menu a:hover {
     color: white;
 }
-.container{
+
+.container {
     position: absolute;
-    left:26em;
-    top:15em;
-    width:40em;
+    left: 26em;
+    top: 15em;
+    width: 40em;
 }
-.container h1{
+
+.container h1 {
     display: inline;
     font-family: 'Iceland';
     font-size: 55px;
     letter-spacing: 9px;
     animation: text 1s 1;
 }
-.container p{
+
+.container p {
     margin-top: 1em;
     font-size: 20px;
     letter-spacing: 3px;
     animation: text 2s 1;
 }
-.line{
+
+.line {
     position: absolute;
-    left:24em;
-    top:14.5em;
-    height:8em;
-    width:4px;
-    background-color:#3500D3;
+    left: 24em;
+    top: 14.5em;
+    height: 8em;
+    width: 4px;
+    background-color: #3500D3;
 }
+
 .Icons {
     position: absolute;
     left: 71em;
     top: 17em;
 }
-.Icons a{
+
+.Icons a {
     display: list-item;
     list-style-type: none;
-    color:white;
+    color: white;
 }
 
 .Icons i {
@@ -87,14 +101,16 @@ span i:hover {
     background-color: black;
     color: white;
     border-radius: 50%;
-    box-shadow:0 0 5px 2px #3500D3;
+    box-shadow: 0 0 5px 2px #3500D3;
     padding: 12px;
     margin: 10px;
 }
-.Icons i:hover{
+
+.Icons i:hover {
     cursor: pointer;
 }
-.iconline{
+
+.iconline {
     position: absolute;
     left: 73em;
     top: 19em;
@@ -103,54 +119,63 @@ span i:hover {
     background-color: #2b00ad;
 }
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 768px) {
     #particles-js {
         height: 45em;
     }
-    .menu i{
+
+    .menu i {
         font-size: 25px;
     }
-    .container{
+
+    .container {
         position: absolute;
-        top:18em;
-        left:4em;
-        width:100%;
+        top: 18em;
+        left: 4em;
+        width: 100%;
         height: 100%;
     }
-    .container h1{
+
+    .container h1 {
         font-size: 40px;
         letter-spacing: 5px;
     }
-    .container p{
+
+    .container p {
         font-size: 15px;
         font-weight: 300;
     }
-    .line{
-        height:4px;
-        width:5em;
-        left:4em;
-        top:15.5em;
+
+    .line {
+        height: 4px;
+        width: 5em;
+        left: 4em;
+        top: 15.5em;
     }
-    .Icons{
-        top:32em;
-        left:2.5em;
+
+    .Icons {
+        top: 32em;
+        left: 2.5em;
     }
-    .Icons a{
+
+    .Icons a {
         display: inline-block;
     }
-    .Icons i{
-        font-size:25px;
+
+    .Icons i {
+        font-size: 25px;
     }
-    .iconline{
-        height:2px;
-        width:13em;
-        top:34.2em;
-        left:6em;
+
+    .iconline {
+        height: 2px;
+        width: 13em;
+        top: 34.2em;
+        left: 6em;
     }
 }
 
-@keyframes text{
-    0%{
+@keyframes text {
+    0% {
         letter-spacing: -10px;
     }
 }
