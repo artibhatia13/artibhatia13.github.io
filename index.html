@@ -7,8 +7,8 @@
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
-<body>
-    <div class="HOME">
+<body id="noScroll">
+    <div class="HOME" style="height: 100%;">
         <div id="particles-js">
             <div class="menu" id="sidenav" style="position: absolute;">            
                 <a onclick="closenav()" class="closebtn"><i class="fa fa-times"></i></a>
@@ -44,11 +44,13 @@
         function opennav(){
             document.getElementById("sidenav").style.width = "18em";
             document.getElementById("open").style.display = "none";
+            document.getElementById("noScroll").style.overflow = "hidden";
         }
 
         function closenav(){
             document.getElementById("sidenav").style.width = "0em";
             document.getElementById("open").style.display = "inline";
+            document.getElementById("noScroll").style.overflow = "scroll";
         }
     </script>
 </body>

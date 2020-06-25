@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="pagestyle.css">
     <title>Skills</title>
 </head>
-<body style="background-image: url(../img/bg.jpg);">
+<body style="background-image: url(../img/bg.jpg);" id="noScroll">
     <div class ="SKILLS">
         <div id="particles-js">
             <div class="menu" id="sidenav" style="position: absolute;">
@@ -94,11 +94,13 @@
         function opennav(){
             document.getElementById("sidenav").style.width = "18em";
             document.getElementById("open").style.display = "none";
+            document.getElementById("noScroll").style.overflow = "hidden";
         }
 
         function closenav(){
             document.getElementById("sidenav").style.width = "0em";
             document.getElementById("open").style.display = "inline";
+            document.getElementById("noScroll").style.overflow = "scroll";
         }
     </script>
 </body>

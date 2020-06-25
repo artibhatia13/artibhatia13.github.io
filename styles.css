@@ -9,7 +9,7 @@ body {
 }
 
 #particles-js {
-    height: 35em;
+    height: 100%;
 }
 
 #open {
@@ -56,7 +56,7 @@ span i:hover {
 .container {
     position: absolute;
     left:35%;
-    top: 15em;
+    top: 45%;
 }
 
 .container h1 {
@@ -77,7 +77,7 @@ span i:hover {
 .line { 
     position: absolute;
     left:32%;
-    top: 14em;
+    top: 44%;
     height: 8em;
     width: 4px;
     background-color: #3500D3;
@@ -119,18 +119,16 @@ span i:hover {
 }
 
 @media screen and (max-width: 768px) {
-    
-    #particles-js {
+    #particles-js{
         height: 40em;
     }
-
     .menu i {
         font-size: 25px;
     }
 
     .container {
         position: absolute;
-        top: 17em;
+        top: 45%;
         left: 13%;
         width: 73%;
         height: 8em;
@@ -149,8 +147,8 @@ span i:hover {
     .line {
         height: 4px;
         width: 5em;
-        left: 4em;
-        top: 14.5em;
+        left: 15%;
+        top: 40%;
     }
 
     .Icons {

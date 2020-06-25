@@ -9,7 +9,7 @@
     <title>Skills</title>
 </head>
 
-<body style="background-image: url(../img/bg.jpg);">
+<body style="background-image: url(../img/bg.jpg);" id="noScroll">
     <div class="PROJECT">
         <div id="particles-js">
             <div class="menu" id="sidenav" style="position: absolute;">
@@ -30,7 +30,8 @@
                             <div class="heading">
                                 <h5>IEDC MEC WEBSITE</h5>
                                 <p>I'm core member of IEDC Tech team. We developed a fully responsive and interactive website
-                                    for IEDC-MEC (Innovation and Entrepreneurship Development Cell). 
+                                    for IEDC-MEC (Innovation and Entrepreneurship Development Cell).</br> 
+                                    -> JSX, CSS, React.
                                 </p>
                             </div>
                         </li></br>
@@ -40,7 +41,9 @@
                             <div class="heading">
                                 <h5>CODE MARKET WEBSITE</h5>
                                 <p >In process of building a collaboration platform for
-                                    clients to collabaorate on projects.</p>
+                                    clients to collabaorate on projects.</br>
+                                    -> JSX, CSS, React.
+                                </p>
                             </div>
                         </li></br>
                         <li>
@@ -49,7 +52,8 @@
                             <div class="heading">
                                 <h5>MECBOOKSWATCH</h5>
                                 <p>A website for MEC students to sell old textbooks or
-                                    study material to juniors and buy new from seniors.
+                                    study material to juniors and buy new from seniors.</br>
+                                    -> JSX, CSS, React, Django (I'm doing the backend part).
                                 </p>                            
                             </div>
                         </li></br>
@@ -58,7 +62,9 @@
                             <div class="projectLine"></div>
                             <div class="heading">
                                 <h5>ATTENDANCE TRACKER</h5>
-                                <p>Attendance Tracker marks the attendence of students automatically using facial detection.</p>                            
+                                <p>Attendance Tracker marks the attendence of students automatically using facial detection.</br> 
+                                    -> Django, PostgreSQL.                                   
+                                </p>                            
                             </div>
                         </li></br>
                         <li>
@@ -66,7 +72,9 @@
                             <div class="projectLine"></div>
                             <div class="heading">
                                 <h5>JUSTALKZ</h5>
-                                <p >Chat Application me and my team developed during our first hackathon - Hack Kochi#2 organized by IEEE and WIE 
+                                <p>Chat Application me and my team developed during our first hackathon - Hack Kochi#2
+                                    organized by IEEE and WIE. </br>
+                                    -> HTML, CSS, JS, NodeJS.
                                 </p>
                             </div>
                         </li>
@@ -93,11 +101,13 @@
         function opennav(){
             document.getElementById("sidenav").style.width = "18em";
             document.getElementById("open").style.display = "none";
+            document.getElementById("noScroll").style.overflow = "hidden";
         }
 
         function closenav(){
             document.getElementById("sidenav").style.width = "0em";
             document.getElementById("open").style.display = "inline";
+            document.getElementById("noScroll").style.overflow = "scroll";
         }
     </script>
 </body>
